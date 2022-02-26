@@ -6,4 +6,5 @@
     <string name="profile">Profile</string>
     <string name="continued_without_login">Continue sans se connecter</string>
     <string name="champs_btn_toLogin">Se Connecter</string>
+    <string name="desc_photo">desc photos</string>
 </resources>

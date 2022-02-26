@@ -11,10 +11,6 @@ import com.example.swalismarket.viewmodels.SigninViewModel
 
 class SignInFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = SignInFragment()
-    }
-
     private lateinit var viewModel: SigninViewModel
 
     override fun onCreateView(
@@ -24,10 +20,5 @@ class SignInFragment : Fragment() {
         return inflater.inflate(R.layout.login_fragment, container, false)
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(SigninViewModel::class.java)
-        // TODO: Use the ViewModel
-    }
 
 }
