@@ -10,4 +10,16 @@
         android:name="com.example.swalismarket.views.ClientHome"
         android:label="client_home_fragment"
         tools:layout="@layout/client_home_fragment" />
+    <fragment
+        android:id="@+id/shoppingCartFragment"
+        android:name="com.example.swalismarket.views.ShoppingCartFragment"
+        android:label="ShoppingCartFragment" />
+    <fragment
+        android:id="@+id/ordersFragment"
+        android:name="com.example.swalismarket.views.OrdersFragment"
+        android:label="OrdersFragment" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.swalismarket.views.ProfileFragment"
+        android:label="ProfileFragment" />
 </navigation>
