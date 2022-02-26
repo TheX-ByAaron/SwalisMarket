@@ -7,4 +7,10 @@
     <string name="continued_without_login">Continue sans se connecter</string>
     <string name="champs_btn_toLogin">Se Connecter</string>
     <string name="desc_photo">desc photos</string>
+    <string name="champs_adremail_text">Addresse E-mail</string>
+    <string name="champs_adremail_Hint">E-mail</string>
+    <string name="champs_password_text">Mot de passe</string>
+    <string name="champs_password_Hint">Mot de passe...</string>
+    <string name="champs_btn_logIn">Se connecter</string>
+    <string name="champs_forgetPassword">Oublier le mot de passe</string>
 </resources>

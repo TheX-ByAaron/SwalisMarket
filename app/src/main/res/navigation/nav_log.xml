@@ -9,5 +9,22 @@
         android:id="@+id/logPrincipalFragment"
         android:name="com.example.swalismarket.views.LogPrincipalFragment"
         android:label="log_principal_fragment"
-        tools:layout="@layout/log_principal_fragment" />
+        tools:layout="@layout/log_principal_fragment" >
+        <action
+            android:id="@+id/action_logPrincipalFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_logPrincipalFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.swalismarket.views.SignUpFragment"
+        android:label="sign_up_fragment"
+        tools:layout="@layout/sign_up_fragment" />
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.example.swalismarket.views.SignInFragment"
+        android:label="login_fragment"
+        tools:layout="@layout/login_fragment" />
 </navigation>
