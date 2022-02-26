@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SwalisMarket</string>
+    <string name="cart">Panier</string>
+    <string name="home">Accueil</string>
+    <string name="order">Commande</string>
+    <string name="profile">Profile</string>
+    <string name="continued_without_login">Continue sans se connecter</string>
+    <string name="champs_btn_toLogin">Se Connecter</string>
+</resources>

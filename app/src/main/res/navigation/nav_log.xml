@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_log"
+    app:startDestination="@id/logPrincipalFragment">
+
+    <fragment
+        android:id="@+id/logPrincipalFragment"
+        android:name="com.example.swalismarket.views.LogPrincipalFragment"
+        android:label="log_principal_fragment"
+        tools:layout="@layout/log_principal_fragment" />
+</navigation>
