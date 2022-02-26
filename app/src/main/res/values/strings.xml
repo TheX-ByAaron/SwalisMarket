@@ -22,4 +22,8 @@
     <string name="champs_btn_sign_up">S\'Incrire</string>
     <string name="champs_re_password_text">Reecrire Mot de passe</string>
     <string name="shopping_cart">Le Panier</string>
+    <string name="log_out">Deconnecter</string>
+    <string name="champs_new_password">Nouveau Mot de passe</string>
+    <string name="save_btn">Sauvegarder</string>
+    <string name="edit_btn">Editer</string>
 </resources>
