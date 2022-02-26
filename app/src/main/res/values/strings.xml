@@ -21,4 +21,5 @@
     <string name="field_date_born">Date de naissance</string>
     <string name="champs_btn_sign_up">S\'Incrire</string>
     <string name="champs_re_password_text">Reecrire Mot de passe</string>
+    <string name="shopping_cart">Le Panier</string>
 </resources>
