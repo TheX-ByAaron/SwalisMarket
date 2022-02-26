@@ -15,13 +15,13 @@ import com.example.swalismarket.viewmodels.SignInViewModel
 
 class SignInFragment : Fragment() {
 
-    private lateinit var viewModel: SignInViewModel
     private lateinit var binding: LoginFragmentBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+
         binding = DataBindingUtil.inflate(inflater,R.layout.login_fragment,container,false)
         binding.lifecycleOwner = this
         val viewModelFactory = SignInViewFactory( binding ,this.requireActivity())
