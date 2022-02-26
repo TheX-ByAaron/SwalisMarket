@@ -6,10 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.databinding.DataBindingUtil
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2
-import com.example.swalismarket.R
 import com.example.swalismarket.databinding.LogPrincipalFragmentBinding
 import com.google.android.material.tabs.TabLayoutMediator
 
@@ -19,13 +17,15 @@ class LogPrincipalFragment : Fragment() {
     private lateinit var demoCollectionAdapter: DemoCollectionAdapter
     private lateinit var viewPager: ViewPager2
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?): View {
 
-        binding = DataBindingUtil.inflate(inflater,R.layout.log_principal_fragment,container,false)
-        binding.lifecycleOwner = this
+        binding = LogPrincipalFragmentBinding.inflate(inflater,container,false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
         demoCollectionAdapter = DemoCollectionAdapter(this)
         viewPager = binding.pager
@@ -39,10 +39,7 @@ class LogPrincipalFragment : Fragment() {
         }
 
         }.attach()
-
-        return binding.root
     }
-
 }
 
 class DemoCollectionAdapter(fragment: Fragment) : FragmentStateAdapter(fragment) {

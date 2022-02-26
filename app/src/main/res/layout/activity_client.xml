@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,26 +11,69 @@
         android:id="@+id/myNavClientHostFragment"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         app:defaultNavHost="true"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_nav"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:navGraph="@navigation/nav_client"
         tools:ignore="FragmentTagUsage" />
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation"
+    <com.gauravk.bubblenavigation.BubbleNavigationConstraintView
+        android:id="@+id/bottom_nav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#52CAA8"
-        app:itemIconTint="#30363D"
-        app:itemTextColor="#30363D"
-        app:labelVisibilityMode="labeled"
+        android:background="@color/white"
+        android:elevation="4dp"
+        android:padding="12dp"
+        app:bnc_mode="spread"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/myNavClientHostFragment"
-        app:menu="@menu/menu_client" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/nav_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_title="fragment"
+            app:bt_active="true"
+            app:bt_colorActive="@color/purple_500"
+            app:bt_colorInactive="@color/purple_200"/>
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/nav_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_title="fragment"
+            app:bt_active="true"
+            app:bt_colorActive="@color/purple_500"
+            app:bt_colorInactive="@color/purple_200"/>
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/nav_orders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_title="fragment"
+            app:bt_active="true"
+            app:bt_colorActive="@color/purple_500"
+            app:bt_colorInactive="@color/purple_200"/>
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/nav_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_title="fragment"
+            app:bt_active="true"
+            app:bt_colorActive="@color/purple_500"
+            app:bt_colorInactive="@color/purple_200"/>
+            <!--app:bt_icon="@drawable/ic_restaurant"
+            app:bt_shape="@drawable/transition_background_drawable_restaurant"
+            app:bt_title="@string/restaurant"
+            app:bt_padding="@dimen/internal_padding"
+            app:bt_titlePadding="@dimen/title_padding"-->
+
+
+
+    </com.gauravk.bubblenavigation.BubbleNavigationConstraintView>
 </androidx.constraintlayout.widget.ConstraintLayout>

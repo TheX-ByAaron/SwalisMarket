@@ -8,13 +8,14 @@ import com.example.swalismarket.R
 import com.example.swalismarket.databinding.ActivityChoiceBinding
 
 class ChoiceActivity : AppCompatActivity() {
+
     private lateinit var binding : ActivityChoiceBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_choice)
-
+        binding = ActivityChoiceBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         binding.buttonLogIn.setOnClickListener{
             intent = Intent(applicationContext, LoginActivity::class.java)
@@ -26,8 +27,6 @@ class ChoiceActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
-
-        setContentView(binding.root)
 
     }
 }

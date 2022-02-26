@@ -6,34 +6,24 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.databinding.DataBindingUtil
-import androidx.lifecycle.ViewModelProvider
-import com.example.swalismarket.R
+import androidx.fragment.app.activityViewModels
 import com.example.swalismarket.databinding.SignUpFragmentBinding
-import com.example.swalismarket.viewmodelfactories.SignUpViewFactory
 import com.example.swalismarket.viewmodels.SignUpViewModel
 
 class SignUpFragment : Fragment() {
 
 
     private lateinit var binding: SignUpFragmentBinding
+    private val signUpViewModel: SignUpViewModel by activityViewModels()
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?): View {
 
-        binding = DataBindingUtil.inflate(inflater,R.layout.sign_up_fragment,container,false)
-        binding.lifecycleOwner = this
-        val viewModelFactory = SignUpViewFactory( binding ,this.requireActivity())
-        val signUpViewModel = ViewModelProvider(this, viewModelFactory)[SignUpViewModel::class.java]
-        binding.signUpViewModel = signUpViewModel
-
-
-
+        binding = SignUpFragmentBinding.inflate(inflater,container,false)
         return binding.root
     }
 
-
-
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+    }
 }
