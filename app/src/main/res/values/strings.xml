@@ -13,4 +13,12 @@
     <string name="champs_password_Hint">Mot de passe...</string>
     <string name="champs_btn_logIn">Se connecter</string>
     <string name="champs_forgetPassword">Oublier le mot de passe</string>
+    <string name="field_name">Nom..</string>
+    <string name="field_name_text">Nom:</string>
+    <string name="field_family_name_text">Nom:</string>
+    <string name="field_family_name">Nom...</string>
+    <string name="field_first_name_text">"Prenom : "</string>
+    <string name="field_date_born">Date de naissance</string>
+    <string name="champs_btn_sign_up">S\'Incrire</string>
+    <string name="champs_re_password_text">Reecrire Mot de passe</string>
 </resources>
