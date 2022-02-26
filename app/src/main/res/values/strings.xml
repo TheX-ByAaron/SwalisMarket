@@ -26,4 +26,6 @@
     <string name="champs_new_password">Nouveau Mot de passe</string>
     <string name="save_btn">Sauvegarder</string>
     <string name="edit_btn">Editer</string>
+    <string name="field_phone_user">tel :</string>
+    <string name="field_location_user">Addresse</string>
 </resources>
